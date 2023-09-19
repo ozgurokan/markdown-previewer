@@ -6,7 +6,6 @@ function Help() {
   const dispatch = useDispatch();
   const help = useSelector((state) => state.userText.help);
 
-  console.log(help);
   return (
     <div className='help'>
     <button className='helpButton' onClick={() => {dispatch(setHelp())}}>HELP</button>
